@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="../css/mian.css">
+<script>var init_token='54613082';</script>
+<script type="text/javascript" src="http://static.geni4s.com/weixin/js/tinybox.js?2010"></script>
+<script type="text/javascript" src="http://static.geni4s.com/weixin/theme/js/zepto.min.js"></script>
+<script type="text/javascript" src="http://static.geni4s.com/weixin/theme/js/common.js?v=20131219"></script>
+
+<script type="text/javascript">
+	function load_hide(){
+		document.getElementById("page_loading").style.cssText="display:none;";
+	}
+					$(document).ready(function(){
+				if($(".input_list input[type='date']").length > 0){
+				var _w=$(".input_list li span")[0].offsetWidth;
+				$("input[type='date']").css("width",(_w-14)+"px");
+				}
+			})
+
+	</script>
+</head>
+<body onload="load_hide()" class="second-hand">
+  <div class="page_loading" id="page_loading"><span class="icon-spinner6"></span></div>
+  <div class="common_header">
+    <div class="color_line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="tool_bar">
+      <a href="javascript:history.go(-1);" class="icon-circle-left"></a>
+      <a href="./index.html" class="icon-home"></a>
+      <a href="./aboutUs.html" class="icon-user"></a>
+      <a href="javascript:;" class="icon-equalizer"></a>
+    </div>
+  </div>
+  <div class="common_menu">
+    <div class="menu_o_bg"></div>
+    <div class="menu_main">
+      <div class="index_wrap">
+        <span>
+          <a href="./car.html" class="icon-car"></a>
+          MINI 车型
+        </span>
+        <span>
+          <a href="./secondHand.html" class="icon-google-drive"></a>
+          二手车
+        </span>
+        <span>
+          <a href="./order.html" class="icon-clock"></a>
+          售后预约
+        </span>
+        <span>
+          <a href="./adviser.html" class="icon-user-tie"></a>
+          销售顾问
+        </span>
+        <span><a href="./adviser.html" class="icon-profile"></a>
+          售后顾问
+        </span>
+        <span>
+          <a href="./aboutUs.html" class="icon-phone"></a>
+          联系我们
+        </span>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(".tool_bar .icon-equalizer").click(function() {
+      $(".common_menu").addClass("show");
+    })
+    $(".menu_o_bg").click(function() {
+      $(".common_menu").removeClass("show");
+    })
+  </script>
+  <div class="index_wrap">
+  		<span class="big green_deep"><a href="http://wchat1.geni4s.com/weixin/car/showSale/?dealerid=240" class="icon-cart"></a>我要买</span>
+  		<span class="big blue"><a href="http://wchat1.geni4s.com/weixin/car/sale/?dealerid=240" class="icon-briefcase"></a>我要评估</span>
+  		<span class="big orange"><a href="http://wchat1.geni4s.com/weixin/car/sale/?type=1&dealerid=240" class="icon-coin-yen"></a>我要寄售</span>
+  </div>
+</body>
+</html>

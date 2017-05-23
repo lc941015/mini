@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>顾问页</title>
+<link rel="stylesheet" href="../css/mian.css">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript" src="http://static.geni4s.com/weixin/js/tinybox.js?2010"></script>
+<script type="text/javascript" src="http://static.geni4s.com/weixin/theme/js/zepto.min.js"></script>
+<script type="text/javascript" src="http://static.geni4s.com/weixin/theme/js/common.js?v=20131219"></script>
+
+<script type="text/javascript">
+	function load_hide(){
+		document.getElementById("page_loading").style.cssText="display:none;";
+	}
+					$(document).ready(function(){
+				if($(".input_list input[type='date']").length > 0){
+				var _w=$(".input_list li span")[0].offsetWidth;
+				$("input[type='date']").css("width",(_w-14)+"px");
+				}
+			})
+
+	</script>
+</head>
+<body onload="load_hide()" class="gw">
+	<div class="page_loading" id="page_loading"><span class="icon-spinner6"></span></div>
+	<div class="common_header">
+		<div class="color_line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+		<div class="tool_bar">
+			<a href="javascript:history.go(-1);" class="icon-circle-left"></a>
+			<a href="./index.html" class="icon-home"></a>
+			<a href="./aboutUs.html" class="icon-user"></a>
+			<a href="javascript:;" class="icon-equalizer"></a>
+		</div>
+	</div>
+	<div class="common_menu">
+		<div class="menu_o_bg"></div>
+		<div class="menu_main">
+			<div class="index_wrap">
+				<span>
+					<a href="./car.html" class="icon-car"></a>
+					MINI 车型
+				</span>
+				<span>
+					<a href="./secondHand.html" class="icon-google-drive"></a>
+					二手车
+				</span>
+				<span>
+					<a href="./order.html" class="icon-clock"></a>
+					售后预约
+				</span>
+				<span>
+					<a href="./adviser.html" class="icon-user-tie"></a>
+					销售顾问
+				</span>
+				<span><a href="./adviser.html" class="icon-profile"></a>
+					售后顾问
+				</span>
+				<span>
+					<a href="./aboutUs.html" class="icon-phone"></a>
+					联系我们
+				</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(".tool_bar .icon-equalizer").click(function() {
+			$(".common_menu").addClass("show");
+		})
+		$(".menu_o_bg").click(function() {
+			$(".common_menu").removeClass("show");
+		})
+	</script>
+	<div class="wrap">
+  		<div class="gw_box">
+			<span class="head_pic">
+				<img src="../imgs/touxiang.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>候明明</span>
+				<a href="tel:15869179626" class="phone_call"><b class="icon-phone"></b>15869179626</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419160423274712.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>周涛</span>
+				<a href="tel:18757162343" class="phone_call"><b class="icon-phone"></b>18757162343</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419161247803426.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>徐涛</span>
+				<a href="tel:13738199407" class="phone_call"><b class="icon-phone"></b>13738199407</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419161353623842.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>王荷艳</span>
+				<a href="tel:13738131094" class="phone_call"><b class="icon-phone"></b>13738131094</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419161447835578.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>戴衍炜</span>
+				<a href="tel:13456835458" class="phone_call"><b class="icon-phone"></b>13456835458</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419161558621124.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>杜丹萍</span>
+				<a href="tel:13738114220" class="phone_call"><b class="icon-phone"></b>13738114220</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419161713402820.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>余其赟</span>
+				<a href="tel:18968047315" class="phone_call"><b class="icon-phone"></b>18968047315</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419161841610795.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>金立立</span>
+				<a href="tel:15068775031" class="phone_call"><b class="icon-phone"></b>15068775031</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419161921506039.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>郑巧娜</span>
+				<a href="tel:13958072274" class="phone_call"><b class="icon-phone"></b>13958072274</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419162131174421.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>张  琪</span>
+				<a href="tel:15857137107" class="phone_call"><b class="icon-phone"></b>15857137107</a>
+			</span>
+		</div>
+			<div class="gw_box">
+			<span class="head_pic">
+				<img src="http://image.geni4s.com//source/2017/04/19/20170419162334968376.jpg.73x73.jpg" alt="" />
+			</span>
+			<span class="gw_detail">
+				<span>俞  杰</span>
+				<a href="tel:15158151182" class="phone_call"><b class="icon-phone"></b>15158151182</a>
+			</span>
+		</div>
+		</div>
+
+</body>
+</html>

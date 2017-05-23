@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="yes" name="apple-touch-fullscreen" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>预约报名</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="../css/mian.css">
+		<link rel="stylesheet" href="../css/mobiscroll.custom-2.5.0.min.css">
+	<script>
+		var init_token = '54613082';
+	</script>
+	<script type="text/javascript" src="http://static.geni4s.com/weixin/js/tinybox.js?2010"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../libs/mobiscroll.custom-2.5.0.min.js"></script>
+	<script type="text/javascript">
+		function load_hide() {
+			document.getElementById("page_loading").style.cssText = "display:none;";
+		}
+		$(document).ready(function() {
+			if ($(".input_list input[type='date']").length > 0) {
+				var _w = $(".input_list li span")[0].offsetWidth;
+				$("input[type='date']").css("width", (_w - 14) + "px");
+			}
+		})
+	</script>
+</head>
+
+<body onload="load_hide()">
+	<div class="page_loading" id="page_loading"><span class="icon-spinner6"></span></div>
+	<div class="common_header">
+		<div class="color_line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+		<div class="tool_bar">
+			<a href="javascript:history.go(-1);" class="icon-circle-left"></a>
+			<a href="./index.html" class="icon-home"></a>
+      <a href="./aboutUs.html" class="icon-user"></a>
+			<a href="javascript:;" class="icon-equalizer"></a>
+		</div>
+	</div>
+	<div class="common_menu">
+		<div class="menu_o_bg"></div>
+		<div class="menu_main">
+			<div class="index_wrap">
+				<span>
+          <a href="./car.html" class="icon-car"></a>
+          MINI 车型
+        </span>
+				<span>
+          <a href="./secondHand.html" class="icon-google-drive"></a>
+          二手车
+        </span>
+				<span>
+          <a href="./order.html" class="icon-clock"></a>
+          售后预约
+        </span>
+				<span>
+          <a href="./adviser.html" class="icon-user-tie"></a>
+          销售顾问
+        </span>
+				<span><a href="./adviser.html" class="icon-profile"></a>
+          售后顾问
+        </span>
+				<span>
+          <a href="./aboutUs.html" class="icon-phone"></a>
+          联系我们
+        </span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(".tool_bar .icon-equalizer").click(function() {
+			$(".common_menu").addClass("show");
+		})
+		$(".menu_o_bg").click(function() {
+			$(".common_menu").removeClass("show");
+		})
+	</script>
+	<!--通用头部 end-->
+	<div class="wrap">
+		<div class="top_info">
+			<p>MINI售后预约平台</p>
+			<p></p>
+			<a href="tel:0571-87603000" class="phone">电话预约 0571-876xxxx</a>
+		</div>
+		<div class="input_list">
+			<form action="http://wchat1.geni4s.com/weixin/service/addOrder" method="post" style="margin-top: 0px;">
+				<input name="add[uid]" type="hidden" value="">
+				<input name="init_token" type="hidden" value="54613082">
+				<input name="dealerid" type="hidden" value="240">
+				<input name="formhash" type="hidden" value="9e47b810">
+				<ul>
+					<li>
+						<label>您的姓名：</label>
+						<span>
+						<input type="text" name="add[username]" value=""/>
+					</span>
+					</li>
+					<li>
+						<label>手机号码：</label>
+						<span>
+						<input type="text" name="add[mobile]" value=""/>
+					</span>
+					</li>
+					<li>
+						<label>您的车牌：</label>
+						<div class="input-group">
+							<span style="float:left;width:28%;">
+								<select id="car_province" name="add[carprovice]" >
+									<option value="京" >京</option>
+									<option value="沪" >沪</option>
+									<option value="津" >津</option>
+									<option value="冀" >冀</option>
+									<option value="晋" >晋</option>
+									<option value="蒙" >蒙</option>
+									<option value="辽" >辽</option>
+									<option value="吉" >吉</option>
+									<option value="黑" >黑</option>
+									<option value="苏" >苏</option>
+									<option value="浙" selected="selected">浙</option>
+									<option value="皖" >皖</option>
+									<option value="闽" >闽</option>
+									<option value="赣" >赣</option>
+									<option value="鲁" >鲁</option>
+									<option value="豫" >豫</option>
+									<option value="鄂" >鄂</option>
+									<option value="湘" >湘</option>
+									<option value="粤" >粤</option>
+									<option value="桂" >桂</option>
+									<option value="琼" >琼</option>
+									<option value="渝" >渝</option>
+									<option value="川" >川</option>
+									<option value="贵" >贵</option>
+									<option value="云" >云</option>
+									<option value="藏" >藏</option>
+									<option value="陕" >陕</option>
+									<option value="甘" >甘</option>
+									<option value="青" >青</option>
+									<option value="宁" >宁</option>
+									<option value="新" >新</option>
+								</select>
+							</span>
+
+							<span style="width:68%">
+								<input type="text" name="add[chepai]" value="" />
+							</span>
+						</div>
+					</li>
+					<li>
+						<label>我要预约：</label>
+
+						<span class="radio_wrap">
+												<input type="radio" name="add[maintain]" value="2" id="yy_baoyang"/><label for="yy_baoyang">预约保养</label>
+						<input type="radio" name="add[maintain]" value="1" id="yy_weixiu"/><label for="yy_weixiu">预约维修</label>
+											</span>
+					</li>
+					<li>
+						<label>行驶公里：</label>
+						<span>
+						<input type="text" name="add[miles]" value=""/>
+					</span>
+					</li>
+					<li>
+						<label>车型系列：</label>
+						<span>
+						<select name="add[modelid]" id="modelid">
+							 <option value="0" selected>请选择车系</option><option value="223" >MINI</option><option value="2028" >MINI JCW</option>						</select>
+					</span>
+					</li>
+					<li>
+						<label>&nbsp;</label>
+						<span>
+						<select name="add[optionid]" id="optionid">
+							<option value="0">请选择车型</option>
+													</select>
+					</span>
+					</li>
+					<li>
+						<label>&nbsp;</label>
+						<span>
+						<select name="add[carid]" id="carid">
+							<option value="0">请选择车款</option>
+													</select>
+					</span>
+					</li>
+					<li>
+						<label>选择日期：</label>
+						<span>
+			  			<input id="demo" placeholder="请选择日期"  type="text"/>
+						</span>
+					</li>
+					<li>
+						<label>选择时间：</label>
+						<span>
+						 <select name="add[ordertime]" id="ordertime">
+                  		<option value=0>请先选择预约日期</option>
+               			 </select>
+					</span>
+					</li>
+					<li>
+						<label>选择顾问：</label>
+						<span>
+						 <select name="add[salemanid]" id="salemanid">
+                  		<option value=0>请选择顾问</option>
+               			 </select>
+					</span>
+					</li>
+				</ul>
+
+				<input type="submit" class="sub_form" value="提  交" />
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var today = new Date();
+		var ya = parseInt(today.getFullYear());
+		var month = parseInt(today.getMonth() + 1);
+		var td = parseInt(today.getDate());
+		var today_str = '2017-5-24';
+		$('#demo').mobiscroll().date({
+        theme: "android-ics light",
+        lang: "zh",
+        cancelText: "取消",
+        dateFormat: 'yy-mm-dd', //返回结果格式化为年月格式
+        // wheels:[], 设置此属性可以只显示年月，此处演示，就用下面的onBeforeShow方法,另外也可以用treelist去实现
+        headerText: function (valueText) { //自定义弹出框头部格式
+            array = valueText.split('-');
+            return array[0] + "年" + array[1] + "月" + array[2] + "日";
+        }
+    });
+
+		}
+	</script>
+</body>
+
+</html>

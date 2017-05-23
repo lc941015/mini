@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="../css/mian.css">
+<script type="text/javascript" src="http://static.geni4s.com/weixin/js/tinybox.js?2010"></script>
+<script type="text/javascript" src="http://static.geni4s.com/weixin/theme/js/zepto.min.js"></script>
+<script type="text/javascript" src="http://static.geni4s.com/weixin/theme/js/common.js?v=20131219"></script>
+
+<script type="text/javascript">
+	function load_hide(){
+		document.getElementById("page_loading").style.cssText="display:none;";
+	}
+					$(document).ready(function(){
+				if($(".input_list input[type='date']").length > 0){
+				var _w=$(".input_list li span")[0].offsetWidth;
+				$("input[type='date']").css("width",(_w-14)+"px");
+				}
+			})
+
+	</script>
+</head>
+<body onload="load_hide()" >
+  <div class="page_loading" id="page_loading"><span class="icon-spinner6"></span></div>
+  <div class="common_header">
+    <div class="color_line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="tool_bar">
+      <a href="javascript:history.go(-1);" class="icon-circle-left"></a>
+      <a href="./index.html" class="icon-home"></a>
+      <a href="./aboutUs.html" class="icon-user"></a>
+      <a href="javascript:;" class="icon-equalizer"></a>
+    </div>
+  </div>
+  <div class="common_menu">
+    <div class="menu_o_bg"></div>
+    <div class="menu_main">
+      <div class="index_wrap">
+        <span>
+          <a href="./car.html" class="icon-car"></a>
+          MINI 车型
+        </span>
+        <span>
+          <a href="./secondHand.html" class="icon-google-drive"></a>
+          二手车
+        </span>
+        <span>
+          <a href="./order.html" class="icon-clock"></a>
+          售后预约
+        </span>
+        <span>
+          <a href="./adviser.html" class="icon-user-tie"></a>
+          销售顾问
+        </span>
+        <span><a href="./adviser.html" class="icon-profile"></a>
+          售后顾问
+        </span>
+        <span>
+          <a href="./aboutUs.html" class="icon-phone"></a>
+          联系我们
+        </span>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(".tool_bar .icon-equalizer").click(function() {
+      $(".common_menu").addClass("show");
+    })
+    $(".menu_o_bg").click(function() {
+      $(".common_menu").removeClass("show");
+    })
+  </script>
+  <div class="wrap">
+		<div class="tit_bar">联系方式</div>
+		<div class="about_box">
+			<p>公司名称：汽车有限公司</p>
+			<p>公司性质：4s经销商</p>
+			<p>销售电话：0571-876xxxx</p>
+			<p>服务电话：0571-876xxxx</p>
+			<p>公司地址：<a style="color:#ff0000" target="_blank">上海市普陀区云岭西路638号<span class="icon-location"></span></a></p>
+			<p ></p>
+		</div>
+		<div class="tit_bar">公司简介</div>
+		<div class="about_company">
+      <img src="../imgs/aboutCompany.png" alt="">
+		</div>
+	</div>
+
+	<div class="phone_num_box" id="phone_num_box">
+		<a href="tel:0571-87602333"><b class="icon-phone"></b>0571-87602333</a>
+	</div>
+	<script type="text/javascript">
+		s_pos=0;
+		window.onscroll=function(){
+			if(document.body.scrollTop>s_pos){
+				document.getElementById("phone_num_box").className="phone_num_box box_move";
+			}else{
+				document.getElementById("phone_num_box").className="phone_num_box";
+			}
+			s_pos=document.body.scrollTop-1;
+		}
+	</script>
+</body>
+</html>
